@@ -9,14 +9,18 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="todo__title">Todo Application</h1>
-      <p class="todo__desc">List of all my todos</p>
-      <input type="text" />
-      <button class="todo__addBtn">Add Todo</button>
+      <header>
+        <h1 class="todo__title">Todo App</h1>
+        <!-- <p class="todo__desc">List of all my todos</p> -->
+        <form name="add_todo">
+          <input type="text" />
+          <button class="todo__addBtn">Add Todo</button>
+        </form>
+      </header>
       <ul class="todo-lists">
         <div class="todo-item">
-          <li class="todo-list todo-complete">Call Mum</li>
-          <input class="todo-checkbox" type="checkbox" checked />
+          <li class="todo-list">Call Mum</li>
+          <input class="todo-checkbox" type="checkbox" />
         </div>
         <div class="todo-item">
           <li class="todo-list">Read a book</li>
