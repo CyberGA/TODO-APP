@@ -15,6 +15,10 @@ body {
   margin: 15px auto 0;
   padding: 20px 40px;
   box-shadow: 5px 5px 10px rgba(43, 43, 43, 0.15);
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  z-index: 0;
 }
 .todo__title,
 .todo__desc {
@@ -23,6 +27,7 @@ body {
 }
 .todo__title {
   color: #2d72bf;
+  margin-bottom: 40px;
 }
 .todo__desc {
   font-size: 1.3rem;
@@ -58,17 +63,18 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 1px rgba(204, 204, 204, 0.126);
-  margin: 15px 0;
+  box-shadow: -4px 0 1px -2px rgba(53, 70, 225, 0.322);
+  margin: 5px 0;
+  padding: 10px 0 10px;
   transition: all 400ms;
 }
 .todo-item:hover {
   margin-left: 12px;
-  box-shadow: 0 2px 1px rgba(204, 204, 204, 0.274);
+  box-shadow: -6px 0 1px -2px rgba(53, 70, 225, 0.468);
   cursor: pointer;
 }
 .todo-list {
-  padding: 5px 0;
+  padding: 5px 0 5px 10px;
 }
 .todo-checkbox {
   margin: auto 0;
@@ -80,4 +86,7 @@ body {
 .todo-important {
   color: tomato;
   font-weight: bold;
+}
+form[name="add_todo"] > input[type="text"] {
+  margin-bottom: 10px;
 }
